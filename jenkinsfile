@@ -5,13 +5,13 @@ pipeline
     {
         stage('Clone')
         {
-            stages{
+            steps{
                 git 'https://github.com/Krutika9021/ProjectDay3.git'
             }
         }
         stage('Build')
         {
-            satges{
+            steps{
                 sh 'echo "Building project...."'
             }
         }
